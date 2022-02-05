@@ -1,0 +1,18 @@
+<html>
+
+<body>
+    {% if username != ''%}
+    <p> Username logado: {{username}}</p>
+    <p> Caso deseje sair
+        <a href="/logout">logout</a>
+    </p>
+    {% else %}
+    <p>Você não está logado!!!</p>
+    <p>
+        <a href="/login">Clique para fazer login</a>
+    </p>
+    {% endif %}
+
+</body>
+
+</html>
